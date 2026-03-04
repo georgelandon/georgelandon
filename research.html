@@ -51,6 +51,7 @@
         <a data-nav href="teaching.html">Teaching</a>
         <!--<a data-nav href="blog.html">Blog</a>-->
         <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Z_SS2aIAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+        <a class="btn" href="https://www.linkedin.com/in/george-v-landon-jr/" target="_blank" rel="noreferrer">LinkedIn</a>
         <!-- <a class="btn" href="https://github.com/georgelandon" target="_blank" rel="noreferrer">GitHub</a>-->
       </nav>
     </div>
@@ -61,8 +62,10 @@
       <p class="kicker">Research</p>
       <h1>Topics &amp; Publications</h1>
       <p class="lead">
-        <!--Topic buckets (with descriptions and images) are defined in <code>topics.json</code>.
-        Publications are generated from <code>bibliography.bib</code> and displayed as collapsible entries.-->
+        Core methods: <strong>Computer Vision</strong>, <strong>Graphics / Rendering</strong>, and <strong>Deep Learning</strong>.
+        Application areas below group publications by domain.
+        <!--Topic buckets (with descriptions and images) are defined in <code>topics</code>.
+        Publications are generated from <code>bibliography</code> and displayed as collapsible entries.-->
       </p>
 
       <div id="topicChips" class="topic-chips">
@@ -72,8 +75,9 @@
 
     <section class="card section" id="topics">
       <div class="section-head">
-        <h2>Research topics</h2>
-        <!--<p class="muted">Edit <code>topics.json</code> to update descriptions and images. Place images in <code>assets/topics/</code>.</p>-->
+        <h2>Application areas</h2>
+        <p class="muted">Grouped by applied domain; methods and tooling cut across all areas.</p>
+        <!--<p class="muted"> to update descriptions and images. Place images in <code>assets/topics/</code>.</p>-->
       </div>
 
       <div id="topicsList" class="research">
@@ -84,7 +88,7 @@
     <section class="card section" id="publications">
       <div class="section-head">
         <h2>Publications</h2>
-        <!--<p class="muted">All items from <code>bibliography.bib</code>, grouped by topic and displayed as collapsible entries.</p>-->
+        <!--<p class="muted">All items from <code>bibliography</code>, grouped by topic and displayed as collapsible entries.</p>-->
       </div>
 
       <div class="pub-controls" role="region" aria-label="Publication filters">
@@ -104,7 +108,7 @@
         </select>
 
         <button id="collapseAll" class="btn" type="button">Collapse all</button>
-        <a class="btn" href="bibliography.bib" target="_blank" rel="noreferrer">BibTeX</a>
+        <a class="btn" href="bibliography" target="_blank" rel="noreferrer">BibTeX</a>
       </div>
 
       <div id="pubStats" class="muted pub-stats" aria-live="polite"></div>
@@ -115,7 +119,7 @@
     </section>
 
     <footer class="footer">
-      <div class="muted">© <span id="year"></span> George V. Landon • Built for GitHub Pages</div>
+      <div class="muted">© <span id="year"></span> George V. Landon</div>
     </footer>
 
     <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>

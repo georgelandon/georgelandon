@@ -682,7 +682,7 @@
       topicsRoot.innerHTML = '';
       const d = document.createElement('div');
       d.className = 'muted';
-      d.textContent = `Could not load bibliography.bib (${err?.message || err}).`;
+      d.textContent = `Publications could not be loaded.`;
       topicsRoot.appendChild(d);
     }
   };

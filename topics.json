@@ -2,27 +2,39 @@
   "topics": [
     {
       "id": "sda",
-      "label": "Space Domain Awareness (SDA) & Object Characterization",
-      "hint": "Unresolved spectroscopy • photometry/light curves • simulation datasets",
-      "description": "Deep learning and simulation-driven workflows for characterizing GEO satellites and rocket bodies from unresolved measurements (spectroscopy, photometry/light curves) with an emphasis on realistic validation and operator-relevant outputs.",
+      "label": "Space Domain Awareness (SDA/SSA) & Unresolved Object Characterization",
+      "hint": "Non-imaging sensing (photometry \u2022 spectroscopy \u2022 polarimetry) \u2022 simulation datasets",
+      "description": "Deep learning and simulation-driven workflows for characterizing GEO satellites and rocket bodies from unresolved, multi-modal non-imaging measurements (photometry, spectroscopy, polarimetry), with an emphasis on realistic validation and operator-relevant outputs.",
       "images": [
-        { "src": "assets/topics/sda.svg", "alt": "Stylized satellite in starfield" }
+        {
+          "src": "assets/topics/sda.svg",
+          "alt": "Stylized satellite in starfield"
+        }
       ],
       "links": [
-        { "label": "AMOS 2025 poster (PDF)", "url": "https://amostech.com/TechnicalPapers/2025/Poster/Landon.pdf" },
-        { "label": "DCASS abstracts list", "url": "https://www.aiaa-daycin.org/DCASS/list_abs.php" }
+        {
+          "label": "AMOS 2025 poster (PDF)",
+          "url": "https://amostech.com/TechnicalPapers/2025/Poster/Landon.pdf"
+        },
+        {
+          "label": "DCASS abstracts list",
+          "url": "https://www.aiaa-daycin.org/DCASS/list_abs.php"
+        }
       ],
       "match": {
-        "regex": "(space domain|\\bsda\\b|satellite|space object|rocket\\b|rocket-body|\\borbit\\b|\\bgeo\\b|\\bgeos\\b|light[- ]curve|photometr|spectroscop|slitless)"
+        "regex": "(space domain|\\\\bsda\\\\b|space situational|space surveillance|\\\\bssa\\\\b|\\\\brso\\\\b|satellite|space object|rocket\\\\b|rocket[- ]body|\\\\borbit\\\\b|\\\\bgeo\\\\b|\\\\bgso\\\\b|geosynchronous|geostationary|cislunar|conjunction|two-line element|\\\\btle\\\\b|slitless\\\\s*spectroscop|unresolved\\\\s*spectr|polarimetr\\\\w*|photometric\\\\s*light\\\\s*curve|light[- ]curve\\\\b)"
       }
     },
     {
       "id": "radml",
-      "label": "Radiation Sensing & Machine Learning Methods",
-      "hint": "Gamma-ray spectra • novelty detection • sparse imaging • estimation",
+      "label": "Radiation Detection & Spectral Imaging",
+      "hint": "Gamma-ray spectra \u2022 novelty detection/localization \u2022 sparse reconstruction",
       "description": "Machine learning for gamma-ray spectral analysis and sparse radiation imaging, including novelty detection/localization, compressed sensing / sparse reconstruction, and estimation-oriented ML methods (including mixture proportion estimation).",
       "images": [
-        { "src": "assets/topics/radml.svg", "alt": "Stylized spectrum plot over starfield" }
+        {
+          "src": "assets/topics/radml.svg",
+          "alt": "Stylized spectrum plot over starfield"
+        }
       ],
       "links": [],
       "match": {
@@ -31,24 +43,30 @@
     },
     {
       "id": "docs",
-      "label": "Computational Imaging & Document Restoration",
-      "hint": "Photometric correction • geometry-aware restoration • material/ink identification",
+      "label": "Document Restoration & Computational Imaging",
+      "hint": "Photometric correction \u2022 geometry-aware restoration \u2022 material/ink identification",
       "description": "Vision and imaging methods for document capture, photometric correction, geometric restoration, and material/ink identification.",
       "images": [
-        { "src": "assets/topics/docs.svg", "alt": "Stylized document with light sweep" }
+        {
+          "src": "assets/topics/docs.svg",
+          "alt": "Stylized document with light sweep"
+        }
       ],
       "links": [],
       "match": {
-        "regex": "(document|photometric|illumination|distorted|restoration|digitiz|ink\\b|material classification|reflectance|scanner|negative\\b|manuscript)"
+        "regex": "(document|documents|historical|photometric\\\\s*(correction|restoration)|casually\\\\s*illuminated|illumination|distorted|geometric\\\\s*restoration|restoration|digitiz|scanner|negative\\\\b|negatives\\\\b|ink\\\\b|material\\\\s*classification|reflectance|manuscript)"
       }
     },
     {
       "id": "heritage",
       "label": "Cultural Heritage Digitization & 3D Documentation",
-      "hint": "Petroglyphs/rock art • museum digitization • digital libraries",
+      "hint": "Petroglyphs/rock art \u2022 museum digitization \u2022 digital libraries",
       "description": "Work at the intersection of sensing, 3D documentation, and digital heritage workflows (petroglyphs/rock art, museum digitization, and related digital-library applications).",
       "images": [
-        { "src": "assets/topics/heritage.svg", "alt": "Stylized petroglyph motif" }
+        {
+          "src": "assets/topics/heritage.svg",
+          "alt": "Stylized petroglyph motif"
+        }
       ],
       "links": [],
       "match": {
@@ -57,11 +75,14 @@
     },
     {
       "id": "immersive",
-      "label": "Immersive Media, Audio/VR & Game Development",
-      "hint": "Spatial audio • VR environments • applied development",
+      "label": "Games, VR & Spatial Audio",
+      "hint": "Interactive systems \u2022 spatial audio \u2022 production workflows",
       "description": "Immersive applications and development practices spanning spatial audio, VR environments, and teaching-focused production workflows.",
       "images": [
-        { "src": "assets/topics/immersive.svg", "alt": "Stylized VR headset" }
+        {
+          "src": "assets/topics/immersive.svg",
+          "alt": "Stylized VR headset"
+        }
       ],
       "links": [],
       "match": {
@@ -71,13 +92,18 @@
     {
       "id": "other",
       "label": "Other",
-      "hint": "Patents • security/authentication • short pieces",
-      "description": "Items that don’t cleanly fit the primary research threads (e.g., patents, security/authentication, short articles).",
+      "hint": "Patents \u2022 security/authentication \u2022 short pieces",
+      "description": "Items that don\u2019t cleanly fit the primary research threads (e.g., patents, security/authentication, short articles).",
       "images": [
-        { "src": "assets/topics/other.svg", "alt": "Stylized constellation" }
+        {
+          "src": "assets/topics/other.svg",
+          "alt": "Stylized constellation"
+        }
       ],
       "links": [],
-      "match": { "regex": "" }
+      "match": {
+        "regex": ""
+      }
     }
   ]
 }
