@@ -40,15 +40,17 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 #starfield{
   position: fixed;
   inset: 0;
-  z-index: -2;
+  z-index: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
+
 
 #cursorGlow{
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
   background:
     radial-gradient(260px 260px at var(--gx, 50%) var(--gy, 28%),
@@ -69,6 +71,13 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   }
 }
 
+
+
+/* Keep content above background layers */
+.site-header, main, footer{
+  position: relative;
+  z-index: 2;
+}
 /* ====== Header / Nav ====== */
 .site-header{
   position: sticky;
@@ -466,7 +475,6 @@ body.nav-open .nav{
 
 
 /* ====== Responsive ====== */
-}
 
 @media (max-width: 860px){
   .grid.two{ grid-template-columns: 1fr; }

@@ -66,12 +66,21 @@
   };
 
   if (!prefersReducedMotion) {
+    // Pointer events (modern browsers)
     window.addEventListener("pointermove", (e) => updatePointer(e.clientX, e.clientY), { passive: true });
-    window.addEventListener("touchmove", (e) => {
+    window.addEventListener("pointerdown", (e) => updatePointer(e.clientX, e.clientY), { passive: true });
+
+    // Touch fallback (iOS / older)
+    const touchUpdate = (e) => {
       const t = e.touches && e.touches[0];
       if (!t) return;
       updatePointer(t.clientX, t.clientY);
-    }, { passive: true });
+    };
+    window.addEventListener("touchstart", touchUpdate, { passive: true });
+    window.addEventListener("touchmove", touchUpdate, { passive: true });
+
+    // Mouse fallback (very old browsers that lack Pointer Events)
+    window.addEventListener("mousemove", (e) => updatePointer(e.clientX, e.clientY), { passive: true });
   }
 
   // Starfield
