@@ -49,9 +49,9 @@
         <a data-nav href="index.html">Bio</a>
         <a data-nav href="research.html">Research</a>
         <a data-nav href="teaching.html">Teaching</a>
-        <a data-nav href="blog.html">Blog</a>
+        <!--<a data-nav href="blog.html">Blog</a>-->
         <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Z_SS2aIAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
-        <a class="btn" href="https://github.com/georgelandon" target="_blank" rel="noreferrer">GitHub</a>
+        <!--<a class="btn" href="https://github.com/georgelandon" target="_blank" rel="noreferrer">GitHub</a>-->
       </nav>
     </div>
   </header>
@@ -117,27 +117,94 @@
 
     <section class="card section" id="courses">
       <div class="section-head">
-        <h2>Course themes</h2>
-        <p class="muted">A compact view of recurring course threads.</p>
+        <h2>Courses</h2>
+        <!--<p class="muted">A compact view of recurring course threads.</p>-->
       </div>
 
       <div class="grid two">
-        <div class="callout">
-          <div class="callout-title">Systems &amp; Software</div>
-          <div class="callout-body">C++ • OO design • networking • performance profiling • tooling</div>
-        </div>
-        <div class="callout">
-          <div class="callout-title">ML &amp; Data</div>
-          <div class="callout-body">Deep learning • reinforcement learning agents • evaluation and reproducibility</div>
-        </div>
-        <div class="callout">
-          <div class="callout-title">Graphics &amp; Simulation</div>
-          <div class="callout-body">Rendering • real-time pipelines • modeling/simulation workflows</div>
-        </div>
-        <div class="callout">
-          <div class="callout-title">Immersive Development</div>
-          <div class="callout-body">VR app development • spatial audio • production workflows</div>
-        </div>
+          <div class="callout">
+            <div class="callout-title">Systems &amp; Software</div>
+            <div class="callout-body">
+              <div class="course">
+                <div class="course-name">C++ Programming</div>
+                <div class="course-desc">Modern C++ fundamentals through performance-aware programming exercises and small systems-style projects.</div>
+                <div class="course-tech">Tech: C++17/20 • STL • CMake • Git • unit testing</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Object-Oriented Design (C++)</div>
+                <div class="course-desc">Design for maintainability: abstraction, interfaces, SOLID principles, and pattern-driven architecture using C++.</div>
+                <div class="course-tech">Tech: C++ • design patterns • code review • static analysis</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Computer Networking</div>
+                <div class="course-desc">Internet protocols from the ground up: sockets, routing concepts, congestion/throughput tradeoffs, and practical troubleshooting.</div>
+                <div class="course-tech">Tech: TCP/UDP sockets • Wireshark • Linux tooling</div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="callout">
+            <div class="callout-title">ML &amp; Data</div>
+            <div class="callout-body">
+              <div class="course">
+                <div class="course-name">Deep Learning</div>
+                <div class="course-desc">From linear models to modern neural networks: optimization, CNNs, regularization, and disciplined evaluation.</div>
+                <div class="course-tech">Tech: Python • PyTorch • Jupyter • experiment tracking</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Agents using Reinforcement Learning</div>
+                <div class="course-desc">Train agents in simulated environments; compare value-based and policy-gradient approaches; emphasize reproducibility.</div>
+                <div class="course-tech">Tech: PyTorch • Gymnasium-style environments • logging/plots</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Data Science / Applied AI (projects)</div>
+                <div class="course-desc">End-to-end data work: dataset curation, baselines, error analysis, and communicating results to non-specialists.</div>
+                <div class="course-tech">Tech: Python • NumPy/Pandas • scikit-learn • visualization</div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="callout">
+            <div class="callout-title">Graphics &amp; Simulation</div>
+            <div class="callout-body">
+              <div class="course">
+                <div class="course-name">Computer Graphics</div>
+                <div class="course-desc">The rendering pipeline in depth: transforms, lighting/shading, texturing, and basic GPU programming concepts.</div>
+                <div class="course-tech">Tech: OpenGL • GLSL • linear algebra • debugging tools</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Graphics Programming</div>
+                <div class="course-desc">Real-time rendering techniques and performance constraints; building small engines/renderers and profiling them.</div>
+                <div class="course-tech">Tech: C++ • OpenGL/GLSL • asset pipelines • profiling</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Modeling / Simulation Workflows</div>
+                <div class="course-desc">Scenario-driven simulations with an emphasis on data generation, validation, and analysis loops.</div>
+                <div class="course-tech">Tech: Python • scripting • reproducible pipelines</div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="callout">
+            <div class="callout-title">Immersive Development</div>
+            <div class="callout-body">
+              <div class="course">
+                <div class="course-name">VR App Development</div>
+                <div class="course-desc">Interaction design for XR: locomotion, input, performance budgets, and building deployable VR experiences.</div>
+                <div class="course-tech">Tech: Unity/Unreal • OpenXR • C#/C++ • performance tuning</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Video Game Engineering</div>
+                <div class="course-desc">Engineering practices for games: game loop architecture, components/systems, tooling, and testing in production-style projects.</div>
+                <div class="course-tech">Tech: engine architecture • version control • CI habits</div>
+              </div>
+              <div class="course">
+                <div class="course-name">Spatial Audio &amp; Virtual Environments</div>
+                <div class="course-desc">Audio as a first-class interaction channel: spatialization concepts and integrating sound design into immersive scenes.</div>
+                <div class="course-tech">Tech: spatial audio tooling • middleware concepts</div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
