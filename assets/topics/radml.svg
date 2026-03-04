@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Radiation sensing and machine learning">
+  <defs>
+    <radialGradient id="bg" cx="18%" cy="22%" r="95%">
+      <stop offset="0" stop-color="#1a2a52" stop-opacity="0.88"/>
+      <stop offset="0.6" stop-color="#0b1026" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#060914"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#96cdff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ba84ff" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="260" cy="150" r="210" fill="url(#g)" filter="url(#soft)" opacity="0.30"/>
+  <circle cx="980" cy="260" r="240" fill="url(#g)" filter="url(#soft)" opacity="0.22"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.70">
+    <circle cx="90" cy="110" r="2"/><circle cx="190" cy="260" r="1.4"/><circle cx="300" cy="90" r="1.2"/>
+    <circle cx="460" cy="180" r="1.8"/><circle cx="600" cy="120" r="1.3"/><circle cx="760" cy="240" r="1.5"/>
+    <circle cx="920" cy="130" r="1.2"/><circle cx="1120" cy="90" r="1.7"/><circle cx="1020" cy="520" r="1.2"/>
+    <circle cx="820" cy="560" r="1.6"/><circle cx="620" cy="610" r="1.3"/><circle cx="360" cy="540" r="1.1"/>
+  </g>
+
+  <!-- spectrum plot -->
+  <g transform="translate(160 390)">
+    <rect width="880" height="210" rx="22" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M60 160H820" stroke="rgba(255,255,255,0.16)" stroke-width="3"/>
+    <path d="M60 40V160" stroke="rgba(255,255,255,0.16)" stroke-width="3"/>
+
+    <path d="M60 155
+             C120 150, 160 132, 200 105
+             C240 78, 290 98, 330 70
+             C370 42, 430 62, 480 46
+             C530 30, 580 72, 630 54
+             C680 36, 730 88, 780 60
+             C800 50, 815 48, 820 47"
+          fill="none" stroke="rgba(150,205,255,0.72)" stroke-width="5"/>
+
+    <!-- peaks -->
+    <g stroke="rgba(186,132,255,0.75)" stroke-width="5" opacity="0.9">
+      <path d="M230 160V88"/>
+      <path d="M340 160V56"/>
+      <path d="M500 160V44"/>
+      <path d="M700 160V76"/>
+    </g>
+  </g>
+</svg>

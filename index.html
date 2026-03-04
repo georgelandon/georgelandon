@@ -1,5 +1,154 @@
-<!DOCTYPE html>
-<html>
-  <head><title>George Landon</title></head>
-  <body>Currently under construction.  I'll have this updated soon (2/10/26).</body>
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N8FRD9ZJ');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>George V. Landon — Bio</title>
+  <meta name="description" content="George V. Landon — Professor, program head, and researcher in Space Domain Awareness, machine learning, and computer vision." />
+
+  <meta property="og:title" content="George V. Landon" />
+  <meta property="og:description" content="Bio • Research • Teaching" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23b7dbff' d='M32 2l3.6 18.7L54 24.4 38 35.1 41.9 62 32 49.7 22.1 62 26 35.1 10 24.4l18.4-3.7z'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8FRD9ZJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Background layers -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text">George V. Landon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="nav" aria-label="Primary">
+        <a data-nav href="index.html">Bio</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Z_SS2aIAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+        <a class="btn" href="https://github.com/georgelandon" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Space Domain Awareness • Machine Learning • Computer Vision</p>
+      <h1>Professor • Program Head • Research Mentor</h1>
+      <p class="lead">
+        I’m <strong>George V. Landon</strong>, Professor of Computer Science and Program Head for
+        <strong>Computer Science / Cyber Operations</strong> at <strong>Cedarville University</strong>.
+        My recent work centers on <strong>unresolved space object characterization</strong> (spectroscopy / photometry)
+        and <strong>ML for sensing and reconstruction</strong>.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="research.html">Research overview</a>
+        <a class="btn" href="teaching.html">Teaching</a>
+        <a class="btn" href="mailto:george.landon@cedarville.edu">Email</a>
+      </div>
+
+      <div class="meta-row">
+        <a href="https://www.cedarville.edu/academics/schools/engineering-and-computer-science/faculty/faculty/landon-george" target="_blank" rel="noreferrer">Cedarville profile</a>
+        <span class="sep">•</span>
+        <a href="https://amostech.com/TechnicalPapers/2025/Poster/Landon.pdf" target="_blank" rel="noreferrer">AMOS 2025 poster</a>
+        <span class="sep">•</span>
+        <a href="https://www.aiaa-daycin.org/DCASS/list_abs.php" target="_blank" rel="noreferrer">DCASS abstract list</a>
+      </div>
+    </section>
+
+    <section class="card section" id="bio">
+      <div class="section-head">
+        <h2>Bio</h2>
+        <p class="muted">Background, interests, and current focus.</p>
+      </div>
+
+      <div class="grid two">
+        <div>
+          <p>
+            My background is in <strong>computer vision</strong> and <strong>computational imaging</strong>
+            (PhD, University of Kentucky). Recent work emphasizes <strong>Space Domain Awareness</strong>
+            using <em>unresolved</em> sensing modalities (spectroscopy / photometry) and simulation-driven evaluation.
+            I also work on <strong>gamma-ray spectral analysis</strong> and <strong>sparse reconstruction</strong>,
+            including feature-driven methods and hybrid model-based/learned pipelines.
+          </p>
+          <p>
+            Beyond research, I lead program development in computer science and cybersecurity education and mentor student teams
+            spanning SDA, deep learning, graphics, and immersive systems.
+          </p>
+        </div>
+
+        <div class="callouts">
+          <div class="callout">
+            <div class="callout-title">Affiliation</div>
+            <div class="callout-body">Cedarville University (2019–present)</div>
+          </div>
+          <div class="callout">
+            <div class="callout-title">Education</div>
+            <div class="callout-body">PhD Computer Science (UKY, 2008) • BS Computer Science (UKY, 2002)</div>
+          </div>
+          <div class="callout">
+            <div class="callout-title">Tools</div>
+            <div class="callout-body">C++ • Python • PyTorch • OpenCV • CUDA • OpenGL • Unreal • Unity • Git</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section" id="topics">
+      <div class="section-head">
+        <h2>Topics</h2>
+        <p class="muted">Broad areas covered in the research page (with a complete publications list).</p>
+      </div>
+
+      <div class="topic-chips">
+        <a class="chip" href="research.html#topic-sda">Space Domain Awareness</a>
+        <a class="chip" href="research.html#topic-radml">Radiation &amp; ML Methods</a>
+        <a class="chip" href="research.html#topic-docs">Document Restoration</a>
+        <a class="chip" href="research.html#topic-heritage">Cultural Heritage</a>
+        <a class="chip" href="research.html#topic-immersive">Immersive / Audio / VR</a>
+        <a class="chip" href="research.html#topic-other">Other</a>
+      </div>
+
+      <div class="links" style="margin-top:0.7rem;">
+        <a href="research.html#publications">Browse publications</a>
+        <a href="bibliography.bib" target="_blank" rel="noreferrer">Download BibTeX</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted">© <span id="year"></span> George V. Landon • Built for GitHub Pages</div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>

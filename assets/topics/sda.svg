@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Space Domain Awareness">
+  <defs>
+    <radialGradient id="bg" cx="22%" cy="18%" r="95%">
+      <stop offset="0" stop-color="#1b2a5a" stop-opacity="0.88"/>
+      <stop offset="0.6" stop-color="#0b1026" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#060914"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#96cdff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ba84ff" stop-opacity="0.65"/>
+    </linearGradient>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="70" cy="90" r="2"/><circle cx="160" cy="220" r="1.6"/><circle cx="240" cy="120" r="1.4"/>
+    <circle cx="340" cy="310" r="1.2"/><circle cx="520" cy="130" r="1.8"/><circle cx="680" cy="260" r="1.3"/>
+    <circle cx="820" cy="110" r="1.6"/><circle cx="980" cy="160" r="1.2"/><circle cx="1120" cy="90" r="1.8"/>
+    <circle cx="1040" cy="420" r="1.2"/><circle cx="880" cy="520" r="1.6"/><circle cx="640" cy="560" r="1.4"/>
+    <circle cx="420" cy="500" r="1.1"/><circle cx="210" cy="540" r="1.5"/><circle cx="110" cy="410" r="1.2"/>
+  </g>
+
+  <!-- soft nebula glows -->
+  <circle cx="240" cy="160" r="190" fill="url(#g)" filter="url(#soft)" opacity="0.35"/>
+  <circle cx="980" cy="260" r="210" fill="url(#g)" filter="url(#soft)" opacity="0.25"/>
+
+  <!-- satellite -->
+  <g transform="translate(660 260)">
+    <rect x="-28" y="-28" width="56" height="56" rx="12" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.32)"/>
+    <rect x="-10" y="-10" width="20" height="20" rx="5" fill="rgba(150,205,255,0.35)"/>
+
+    <!-- solar panels -->
+    <g fill="rgba(150,205,255,0.18)" stroke="rgba(255,255,255,0.22)">
+      <rect x="-160" y="-18" width="110" height="36" rx="10"/>
+      <rect x="50" y="-18" width="110" height="36" rx="10"/>
+      <path d="M-148 -6h86M-148 6h86M62 -6h86M62 6h86" opacity="0.7"/>
+    </g>
+
+    <!-- antenna -->
+    <path d="M0 28v80" stroke="rgba(255,255,255,0.34)" stroke-width="4"/>
+    <circle cx="0" cy="120" r="10" fill="rgba(186,132,255,0.38)"/>
+  </g>
+
+  <!-- orbit arc -->
+  <path d="M120 520c250-220 520-290 860-210" fill="none" stroke="rgba(150,205,255,0.25)" stroke-width="3"/>
+</svg>

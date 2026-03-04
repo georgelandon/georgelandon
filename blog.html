@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N8FRD9ZJ');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>George V. Landon — Blog</title>
+  <meta name="description" content="Blog and notes by George V. Landon." />
+
+  <meta property="og:title" content="George V. Landon — Blog" />
+  <meta property="og:description" content="Notes, short write-ups, and project updates" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23b7dbff' d='M32 2l3.6 18.7L54 24.4 38 35.1 41.9 62 32 49.7 22.1 62 26 35.1 10 24.4l18.4-3.7z'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8FRD9ZJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text">George V. Landon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="nav" aria-label="Primary">
+        <a data-nav href="index.html">Bio</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="blog.html">Blog</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Z_SS2aIAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+        <a class="btn" href="https://github.com/georgelandon" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero hero-compact">
+      <p class="kicker">Blog</p>
+      <h1>Notes &amp; short write-ups</h1>
+      <p class="lead">
+        Lightweight posts (project updates, teaching notes, research sketches). This page is intentionally simple for GitHub Pages.
+      </p>
+    </section>
+
+    <section class="card section" id="posts">
+      <div class="section-head">
+        <h2>Posts</h2>
+        <p class="muted">Add new posts as separate HTML files under <code>posts/</code> (or keep everything here).</p>
+      </div>
+
+      <div class="blog-list">
+        <article class="item">
+          <div class="item-title">
+            <span>No posts yet</span>
+            <span class="tag">—</span>
+          </div>
+          <p class="muted">When you add your first post, link it here. Example: <code>posts/2026-03-03-my-post.html</code>.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted">© <span id="year"></span> George V. Landon • Built for GitHub Pages</div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
