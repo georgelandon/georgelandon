@@ -82,7 +82,7 @@ if (!canvas || !ctx) return;
 
 // Allow manual override: add ?motion=1 to force animation (useful for debugging).
 const forceMotion = new URLSearchParams(location.search).get("motion") === "1";
-const prefersReducedMotion = !forceMotion && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const starfieldReducedMotion = !forceMotion && prefersReducedMotion;
 
 let w = 0, h = 0;
 let dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
@@ -162,7 +162,7 @@ const idleTarget = (t) => {
 // Smooth follow
 const smooth = (cur, tgt, dt) => cur + (tgt - cur) * (1 - Math.pow(0.001, dt));
 
-if (!prefersReducedMotion) {
+if (!starfieldReducedMotion) {
   window.addEventListener("pointermove", (e) => notePointer(e.clientX, e.clientY), { passive: true });
   window.addEventListener("pointerdown", (e) => notePointer(e.clientX, e.clientY), { passive: true });
   window.addEventListener("mousemove", (e) => notePointer(e.clientX, e.clientY), { passive: true }); // fallback
@@ -252,7 +252,7 @@ const renderStatic = () => {
 const start = () => {
   if (rafId) cancelAnimationFrame(rafId);
   last = performance.now();
-  if (prefersReducedMotion) {
+  if (starfieldReducedMotion) {
     renderStatic();
     return;
   }
