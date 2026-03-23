@@ -49,7 +49,9 @@
 
   // Cursor glow (mouse + touch)
   const glow = document.getElementById("cursorGlow");
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Allow manual override: add ?motion=1 to force animation (useful for debugging).
+const forceMotion = new URLSearchParams(location.search).get("motion") === "1";
+const prefersReducedMotion = !forceMotion && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let gx = 0.5, gy = 0.28; // normalized (0..1)
   const setGlow = () => {
@@ -80,9 +82,7 @@ const canvas = document.getElementById("starfield");
 const ctx = canvas?.getContext("2d", { alpha: true });
 if (!canvas || !ctx) return;
 
-// Allow manual override: add ?motion=1 to force animation (useful for debugging).
-const forceMotion = new URLSearchParams(location.search).get("motion") === "1";
-const prefersReducedMotion = !forceMotion && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 
 let w = 0, h = 0;
 let dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
